@@ -1,0 +1,15 @@
+[Unit]
+Description=Reactor MCP Demo (backend + эмулятор)
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/reactor-demo
+EnvironmentFile=/opt/reactor-demo/.env
+ExecStart=/usr/bin/npx tsx src/server.ts
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,24 @@
+# Зависимости
+node_modules/
+
+# Секреты и локальная конфигурация (НИКОГДА не коммитим)
+.env
+.env.local
+*.env
+!.env.example
+
+# Сборка / артефакты
+dist/
+build/
+*.tsbuildinfo
+
+# Логи
+*.log
+npm-debug.log*
+
+# Системные / редакторские
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
